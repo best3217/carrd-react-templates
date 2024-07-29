@@ -1,13 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Raleway:ital,wght@0,300;0,700;1,300;1,700&family=Source+Sans+Pro:ital,wght@0,300;1,300");
+
+html {
+  font-size: 12pt;
+}
+
+@media (min-width: 768px) {
+  /* md: medium devices like tablets */
+  html {
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg: large devices like desktops */
+  html {
+    font-size: 13pt;
+  }
+}
+
+@media (min-width: 1536px) {
+  /* 2xl: extra-large devices like large desktops */
+  html {
+    font-size: 18pt;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
