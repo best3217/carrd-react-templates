@@ -32,8 +32,10 @@ const Template70 = () => {
   const handleLinkClick = (event: any) => {
     const id = event.target.getAttribute("href");
     event.preventDefault();
-    navigate(`${id}`);
     showSection(id);
+    setTimeout(() => {
+      navigate(`${id}`);
+    }, 500);
   };
 
   const showSection = (id: string) => {
