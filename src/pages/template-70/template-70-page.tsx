@@ -81,10 +81,10 @@ const Template70 = () => {
   return (
     <div className="min-w-[320px] overflow-x-hidden font-arial">
       <div className="bg-[#F2F2F2] items-center flex flex-col justify-center overflow-hidden relative min-h-screen">
-        <div className="main flex items-center justify-center relative z-1 rounded-lg max-w-full font-raleway">
+        <div className="relative flex items-center justify-center max-w-full rounded-lg main z-1 font-raleway">
           <div className="inner flex flex-col lg:flex-col-reverse lg:flex-nowrap w-[74rem] relative py-[0.9375rem] px-[0.9375rem] min-[360px]:py-5 min-[360px]:px-5 md:py-12 md:px-12">
             <section data-id="home" className="home-section">
-              <div className="bg-white mb-3">
+              <div className="mb-3 bg-white">
                 <div className="wrapper">
                   <div className="flex flex-wrap flex-col-reverse lg:flex-row items-center py-[2.625rem] px-6 min-[360px]:py-[3.5rem] min-[360px]:px-8 md:py-24 md:px-16">
                     <div className="m-0 w-full pt-[2.25rem] min-[360px]:pt-12 text-center md:pt-16 lg:text-left lg:pt-0 lg:pl-32 lg:w-70-item lg:-ml-32">
@@ -137,7 +137,7 @@ const Template70 = () => {
                       <div className="h-auto relative -ml-[1.5rem] -mt-[2.625rem] -mb-[2.25rem] w-70-right-inner-xs min-[360px]:w-70-right-inner-sm min-[360px]:-ml-8 min-[360px]:-mt-[3.5rem] min-[360px]:-mb-12 md:-mt-[6rem] md:-mb-[4rem] md:-ml-16 md:w-70-right-inner lg:-mt-[6rem] lg:-mb-[6rem] lg:h-70-right">
                         <div className="relative h-[15.75rem] min-[360px]:h-[18rem] sm:h-[22.5rem] w-auto md:h-auto lg:w-full lg:h-full lg:absolute">
                           <img
-                            src="https://res.cloudinary.com/ddefgw6lg/image/upload/v1721988769/image01_1_mjdecc.jpg"
+                            src="/assets/template-70/profile.jpg"
                             alt=""
                             className="object-center h-full object-cover w-full md:max-h-[35rem] lg:max-h-full"
                           />
@@ -148,7 +148,7 @@ const Template70 = () => {
                 </div>
               </div>
 
-              <div className="mt-8 w-full md:mt-10">
+              <div className="w-full mt-8 md:mt-10">
                 <div className="w-full">
                   <div className="flex flex-col items-center lg:flex-row">
                     <div className="w-full pb-[0.234375rem] min-[360px]:pb-[0.3125rem] lg:pb-0">
@@ -250,7 +250,7 @@ const Template70 = () => {
                       <div className="h-auto relative -ml-[1.5rem] -mt-[2.625rem] -mb-[2.25rem] w-70-right-inner-xs min-[360px]:w-70-right-inner-sm min-[360px]:-ml-8 min-[360px]:-mt-[3.5rem] min-[360px]:-mb-12 md:-mt-[6rem] md:-mb-[4rem] md:-ml-16 md:w-70-right-inner lg:-mt-[6rem] lg:-mb-[6rem] lg:h-70-right">
                         <div className="relative h-[12.25rem] min-[360px]:h-[14rem] sm:h-[17.5rem] w-auto md:h-auto lg:w-full lg:h-full lg:absolute">
                           <img
-                            src="https://res.cloudinary.com/ddefgw6lg/image/upload/v1722216733/image03_1_d16gx6.jpg"
+                            src="/assets/template-70/work.jpg"
                             alt=""
                             className="object-center h-full object-cover w-full md:max-h-[35rem] lg:max-h-full"
                           />
@@ -274,14 +274,14 @@ const Template70 = () => {
                           et lorem adipiscing sed nulla.
                         </span>
 
-                        <span className="mt-4 block">
+                        <span className="block mt-4">
                           Vehicula ultrices dolor amet ultricies et condimentum.
                           Magna sed etiam consequat, et lorem adipiscing sed
                           dolor sit amet, consectetur amet do eiusmod tempor
                           incididunt ipsum suspendisse ultrices gravida.
                         </span>
 
-                        <span className="mt-4 block">
+                        <span className="block mt-4">
                           Etiam tristique libero eu nibh porttitor amet
                           fermentum. Nullam venenatis erat id vehicula ultrices.
                         </span>
@@ -346,7 +346,7 @@ const Template70 = () => {
                       <div className="h-auto relative -ml-[1.5rem] -mt-[2.625rem] -mb-[2.25rem] w-70-right-inner-xs min-[360px]:w-70-right-inner-sm min-[360px]:-ml-8 min-[360px]:-mt-[3.5rem] min-[360px]:-mb-12 md:-mt-[6rem] md:-mb-[4rem] md:-ml-16 md:w-70-right-inner lg:-mt-[6rem] lg:-mb-[6rem] lg:h-70-right">
                         <div className="relative h-[12.25rem] min-[360px]:h-[14rem] sm:h-[17.5rem] w-auto md:h-auto lg:w-full lg:h-full lg:absolute">
                           <img
-                            src="https://res.cloudinary.com/ddefgw6lg/image/upload/v1722228692/image02_ayrrvl.jpg"
+                            src="/assets/template-70/about.jpg"
                             alt=""
                             className="object-center h-full object-cover w-full md:max-h-[35rem] lg:max-h-full"
                           />
@@ -358,11 +358,11 @@ const Template70 = () => {
               </div>
             </section>
 
-            <section data-id="contact" className="contact-section text-center">
-              <div className="mb-8 mt-0 md:mb-10">
+            <section data-id="contact" className="text-center contact-section">
+              <div className="mt-0 mb-8 md:mb-10">
                 <div className="w-full max-w-[30rem] inline-block mx-auto text-left">
                   <div>
-                    <ul className="buttons m-0 p-0 flex flex-col">
+                    <ul className="flex flex-col p-0 m-0 buttons">
                       <li>
                         <a
                           role="button"
@@ -458,7 +458,7 @@ const Template70 = () => {
 
             <section
               data-id="contact-done"
-              className="contact-done-section text-center"
+              className="text-center contact-done-section"
             >
               <div>
                 <div className="bg-white w-full max-w-[25rem] inline-block mx-auto">

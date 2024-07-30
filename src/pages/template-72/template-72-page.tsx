@@ -6,10 +6,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Template72Page = () => {
   return (
     <div className="min-w-[320px] overflow-x-hidden font-arial">
-      <div className="w-screen h-screen fixed top-0 z-0 transform scale-100 bg-72-main bg-center bg-72-main-size"></div>
+      <div className="fixed top-0 z-0 w-screen h-screen transform scale-100 bg-center bg-72-main bg-72-main-size"></div>
 
       <div className="items-center flex flex-col justify-center overflow-hidden relative p-6 min-h-screen z-[2]">
-        <div className="main flex items-center justify-center relative text-center z-1 bg-white rounded-lg max-w-full">
+        <div className="relative flex items-center justify-center max-w-full text-center bg-white rounded-lg main z-1">
           <div className="inner w-[24rem] rounded-lg py-12 px-8 max-w-full md:px-10">
             <h1 className="text-[3em] font-bold leading-[1.25] text-[#363636] mb-3 tracking-[-0.125rem] md:text-[3.25em]">
               Jane D.
@@ -19,12 +19,12 @@ const Template72Page = () => {
               Professional Image Capturer
             </p>
 
-            <div className="my-9 -mx-8 md:-mx-10 md:my-12">
+            <div className="-mx-8 my-9 md:-mx-10 md:my-12">
               <div className="h-[17.5rem] sm:h-[21.875rem] md:h-[22.375rem]">
                 <img
-                  src="https://res.cloudinary.com/ddefgw6lg/image/upload/v1722243750/image01_2_gb4ucv.jpg"
+                  src="/assets/template-72/profile.jpg"
                   alt="image01"
-                  className="object-cover h-full object-center w-full"
+                  className="object-cover object-center w-full h-full"
                 />
               </div>
             </div>

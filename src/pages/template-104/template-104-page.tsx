@@ -15,12 +15,12 @@ const Template104Page = () => {
       <div className="bg-[#221E3F] w-screen h-screen fixed top-0 z-0 transform scale-100 bg-main-104 bg-main-size-104 bg-main-position-104"></div>
 
       <div className="items-center flex flex-col justify-center overflow-hidden relative min-h-screen z-[2]">
-        <div className="main flex items-center justify-center relative text-center z-1 max-w-full">
+        <div className="relative flex items-center justify-center max-w-full text-center main z-1">
           <div className="inner w-[30rem] py-12 px-6 max-w-full md:px-8 md:py-16">
             <div className="mt-0 mb-[2.625rem] sm:mb-12">
               <div className="w-[11rem] rounded-full border-[13px] border-[rgba(255,255,255,0.059)] overflow-hidden mx-auto mb-12">
                 <img
-                  src="https://res.cloudinary.com/ddefgw6lg/image/upload/v1721961436/image03_bwj6pl.jpg"
+                  src="/assets/template-104/profile.jpg"
                   alt=""
                   className="max-w-full width-inherit"
                 />
@@ -46,14 +46,14 @@ const Template104Page = () => {
             <div className="my-[1.125rem] flex w-full items-center justify-center border border-[rgba(255,255,255,0.271)] rounded-[3rem] md:my-6">
               <div className="max-w-[70rem] w-full">
                 <div className="flex-wrap flex items-center py-4 px-8 md:py-[1.75rem] md:px-10 rounded-[3rem]">
-                  <div className="flex-1 w-104-social-item-text -ml-16 pl-16">
+                  <div className="flex-1 pl-16 -ml-16 w-104-social-item-text">
                     <p className="text-[1em] leading-[1.625] font-light text-left">
                       Lacus turpis ipsum
                     </p>
                   </div>
 
-                  <div className="flex gap-8 w-104-social-item-icon relative">
-                    <div className="absolute ml-8 h-full">
+                  <div className="relative flex gap-8 w-104-social-item-icon">
+                    <div className="absolute h-full ml-8">
                       <div className="h-full w-[1px] bg-[rgba(255,255,255,0.271)]"></div>
                     </div>
                     <ul className="flex flex-wrap justify-center p-0 text-[1.375rem] w-full gap-0 pl-16">
@@ -75,14 +75,14 @@ const Template104Page = () => {
             <div className="my-[1.125rem] flex w-full items-center justify-center border border-[rgba(255,255,255,0.271)] rounded-[3rem] md:my-6">
               <div className="max-w-[70rem] w-full">
                 <div className="flex-wrap flex items-center py-4 px-8 md:py-[1.75rem] md:px-10 rounded-[3rem]">
-                  <div className="flex-1 w-104-social-item-text -ml-16 pl-16">
+                  <div className="flex-1 pl-16 -ml-16 w-104-social-item-text">
                     <p className="text-[1em] leading-[1.625] font-light text-left">
                       Dignissim sed lorem
                     </p>
                   </div>
 
-                  <div className="flex gap-8 w-104-social-item-icon relative">
-                    <div className="absolute ml-8 h-full">
+                  <div className="relative flex gap-8 w-104-social-item-icon">
+                    <div className="absolute h-full ml-8">
                       <div className="h-full w-[1px] bg-[rgba(255,255,255,0.271)]"></div>
                     </div>
                     <ul className="flex flex-wrap justify-center p-0 text-[1.375rem] w-full gap-0 pl-16">
@@ -104,14 +104,14 @@ const Template104Page = () => {
             <div className="my-[1.125rem] flex w-full items-center justify-center border border-[rgba(255,255,255,0.271)] rounded-[3rem] md:my-6">
               <div className="max-w-[70rem] w-full">
                 <div className="flex-wrap flex items-center py-4 px-8 md:py-[1.75rem] md:px-10 rounded-[3rem]">
-                  <div className="flex-1 w-104-social-item-text -ml-16 pl-16">
+                  <div className="flex-1 pl-16 -ml-16 w-104-social-item-text">
                     <p className="text-[1em] leading-[1.625] font-light text-left">
                       Velit amet tempus
                     </p>
                   </div>
 
-                  <div className="flex gap-8 w-104-social-item-icon relative">
-                    <div className="absolute ml-8 h-full">
+                  <div className="relative flex gap-8 w-104-social-item-icon">
+                    <div className="absolute h-full ml-8">
                       <div className="h-full w-[1px] bg-[rgba(255,255,255,0.271)]"></div>
                     </div>
                     <ul className="flex flex-wrap justify-center p-0 text-[1.375rem] w-full gap-0 pl-16">

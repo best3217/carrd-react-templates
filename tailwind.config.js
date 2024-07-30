@@ -6,9 +6,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         "72-main":
-          "url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.23828125%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(45deg, rgba(145,181,201,0.412) 0%, rgba(166,185,255,0.31) 100%), url('https://61816ab53696835d.demo.carrd.co/assets/images/bg.jpg?v=7496a20c')",
+        "url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.23828125%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(45deg, rgba(145,181,201,0.412) 0%, rgba(166,185,255,0.31) 100%), url('./assets/template-72/cover.jpg')",
         "main-104":
-          "linear-gradient(to top, rgba(34,30,63,0.839), rgba(34,30,63,0.839)), url('https://res.cloudinary.com/ddefgw6lg/image/upload/v1721960663/svg_fp2qfm.svg')",
+          "linear-gradient(to top, rgba(34,30,63,0.839), rgba(34,30,63,0.839)), url('./assets/template-104/cover.svg')",
         "gradient-instagram":
           "linear-gradient(45deg, #1905FF 0%, rgba(255,5,155,0.008) 100%)",
         "gradient-snapchat":
