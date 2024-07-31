@@ -4,6 +4,7 @@ import Template70 from "./pages/template-70/template-70-page";
 import Template72Page from "./pages/template-72/template-72-page";
 import Template104Page from "./pages/template-104/template-104-page";
 import Template184Page from "./pages/template-184/template-184-page";
+import Template230Page from "./pages/template-230/template230Page";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/carrd-184",
     element: <Template184Page />,
+  },
+  {
+    path: "/carrd-230",
+    element: <Template230Page />,
   },
 ]);
 

@@ -26,6 +26,11 @@ const HomePage = () => {
               Template 184
             </Link>
           </li>
+          <li className="mr-6">
+            <Link className="text-blue-500 hover:text-blue-800" to="/carrd-230">
+              Template 230
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
