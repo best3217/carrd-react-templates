@@ -3,6 +3,7 @@ import HomePage from "./pages/home/home-page";
 import Template70 from "./pages/template-70/template-70-page";
 import Template72Page from "./pages/template-72/template-72-page";
 import Template104Page from "./pages/template-104/template-104-page";
+import Template184Page from "./pages/template-184/template-184-page";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/carrd-104",
     element: <Template104Page />,
+  },
+  {
+    path: "/carrd-184",
+    element: <Template184Page />,
   },
 ]);
 
