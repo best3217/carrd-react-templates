@@ -33,6 +33,13 @@ module.exports = {
           "url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.26953125%200%200%200%200%200%200.203125%200%200%200%200%200%200.27734375%200%200%200%200%200%200.4375%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(206,223,242,0.11), rgba(206,223,242,0.11)), url('./assets/template-203/cover.jpg')",
         "203-inner-box":
           "linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.588) 76%)",
+        "210-main":
+          "url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.078125%200%200%200%200%200%200.078125%200%200%200%200%200%200.078125%200%200%200%200%200%200.359375%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E')",
+        "210-inner":
+          "url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.08984375%200%200%200%200%200%200.09765625%200%200%200%200%200%200.09375%200%200%200%200%200%200.65625%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(180deg, rgba(0,0,0,0.22) 39%, rgba(20,20,20,0.522) 100%)",
+        "210-cover-1": "url('./assets/template-210/cover-1.jpg')",
+        "210-cover-2": "url('./assets/template-210/cover-2.jpg')",
+        "210-cover-3": "url('./assets/template-210/cover-3.jpg')",
       },
       backgroundSize: {
         "72-main-size": "512px, cover, cover",
@@ -40,6 +47,8 @@ module.exports = {
         "184-main-size": "512px, cover, cover",
         "230-main-size": "748px",
         "main-size-104": "512px, cover, cover",
+        512: "512px",
+        "512-cover": "512px, cover",
       },
       fontFamily: {
         arial: ["Arial", "sans-serif"],
@@ -48,6 +57,7 @@ module.exports = {
         karla: ["Karla", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         vidaloka: ["Vidaloka", "sans-serif"],
+        "jetbrains-mono": ["JetBrains Mono", "monospace"],
       },
       width: {
         "70-title": "calc(100% + 0.5rem)",
@@ -79,17 +89,23 @@ module.exports = {
       margin: {
         "230-social-icon": "calc(-0.125em + 0rem)",
         "203-divider-md": "calc((8rem * -0.5) - 0.5px)",
-        "203-divider": "calc((5rem * -0.5) - 0.5px)"
+        "203-divider": "calc((5rem * -0.5) - 0.5px)",
+        "210-arrow-icon": "calc(-0.125em + 0.275rem)",
       },
       boxShadow: {
         "70-input": "0 0 0 1px #1CCBD6",
         "203-inner-box": "0rem 2.75rem 4.5rem 0rem rgba(0,0,0,0.2)",
+      },
+      padding: {
+        "210-input": "calc(0.025rem + 1.4rem)",
+        "210-btn": "calc(0.275rem + 2rem)",
       },
       backgroundPosition: {
         "main-position-104": "0% 0%, bottom",
         "position-230-inner-box": "0% 0%",
         "position-0-0": "0% 0%",
         "position-center-0-0-center": "center, 0% 0%, center",
+        "position-center-0-0": "center, 0% 0%",
       },
     },
   },
