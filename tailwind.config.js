@@ -29,9 +29,14 @@ module.exports = {
           "linear-gradient(206deg, #FB576F 0%, rgba(250,41,65,0.008) 100%)",
         "230-twitter":
           "linear-gradient(206deg, rgba(71,71,89,0.478) 0%, rgba(51,51,64,0.004) 100%)",
+        "203-main":
+          "url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.26953125%200%200%200%200%200%200.203125%200%200%200%200%200%200.27734375%200%200%200%200%200%200.4375%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(206,223,242,0.11), rgba(206,223,242,0.11)), url('./assets/template-203/cover.jpg')",
+        "203-inner-box":
+          "linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.588) 76%)",
       },
       backgroundSize: {
         "72-main-size": "512px, cover, cover",
+        "size-512-cover-cover": "512px, cover, cover",
         "184-main-size": "512px, cover, cover",
         "230-main-size": "748px",
         "main-size-104": "512px, cover, cover",
@@ -58,8 +63,10 @@ module.exports = {
         "184-right": "calc(40% + (4rem / 2))",
         "230-left": "calc(60% + (2rem / 2))",
         "230-right": "calc(40% + (2rem / 2))",
-        "w-230-subtitle": "calc(100% + 0.2625rem)",
-        "w-230-subtitle-md": "calc(100% + 0.3rem)",
+        "230-subtitle": "calc(100% + 0.2625rem)",
+        "230-subtitle-md": "calc(100% + 0.3rem)",
+        "203-left": "calc(55% + (8rem / 2))",
+        "203-right": "calc(45% + (8rem / 2))",
       },
       height: {
         "70-right": "calc(100% + 12rem)",
@@ -71,14 +78,18 @@ module.exports = {
       },
       margin: {
         "230-social-icon": "calc(-0.125em + 0rem)",
+        "203-divider-md": "calc((8rem * -0.5) - 0.5px)",
+        "203-divider": "calc((5rem * -0.5) - 0.5px)"
       },
       boxShadow: {
         "70-input": "0 0 0 1px #1CCBD6",
+        "203-inner-box": "0rem 2.75rem 4.5rem 0rem rgba(0,0,0,0.2)",
       },
       backgroundPosition: {
         "main-position-104": "0% 0%, bottom",
         "position-230-inner-box": "0% 0%",
         "position-0-0": "0% 0%",
+        "position-center-0-0-center": "center, 0% 0%, center",
       },
     },
   },

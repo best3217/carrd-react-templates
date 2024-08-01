@@ -27,6 +27,11 @@ const HomePage = () => {
             </Link>
           </li>
           <li className="mr-6">
+            <Link className="text-blue-500 hover:text-blue-800" to="/carrd-203">
+              Template 203
+            </Link>
+          </li>
+          <li className="mr-6">
             <Link className="text-blue-500 hover:text-blue-800" to="/carrd-230">
               Template 230
             </Link>
