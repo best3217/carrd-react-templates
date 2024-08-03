@@ -109,6 +109,7 @@ module.exports = {
       boxShadow: {
         "70-input": "0 0 0 1px #1CCBD6",
         "203-inner-box": "0rem 2.75rem 4.5rem 0rem rgba(0,0,0,0.2)",
+        "210-input": "0 0 0 1px #2EEC9B, inset 0 0 0 1px #2EEC9B",
         "223-card": "0rem 1.5rem 3rem 0rem rgba(33,28,32,0.22)",
         "223-input": "0 0 0 1px #D9458C, inset 0 0 0 1px #D9458C",
       },
