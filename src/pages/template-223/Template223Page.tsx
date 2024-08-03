@@ -97,11 +97,16 @@ const Template223Page = () => {
     }
   };
 
+  const handleOnSubmit = (e: any) => {
+    e.preventDefault();
+    showSection("#done");
+  };
+
   return (
     <div className="min-w-[320px] overflow-x-hidden tex-white min-h-screen leading-[1]">
       <div className="fixed left-0 right-0 z-0 w-screen h-screen bg-no-repeat bg-cover bg-position-center-0-0 bg-223-main"></div>
       <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden relative z-[2]">
-        <div className="relative flex items-center max-w-full main">
+        <div className="relative flex items-center justify-center w-full max-w-full main">
           <div className="inner w-full max-w-[72rem] p-[0.9375rem] min-[360px]:p-5 md:p-16">
             <section id="home-section" className="">
               <div className="bg-223-home bg-cover bg-position-center-0-50 bg-no-repeat flex items-end justify-start shadow-223-card rounded-[2.5rem] min-h-[17.5rem] min-[360px]:min-h-[26.25rem] md:min-h-[35rem]">
@@ -259,12 +264,16 @@ const Template223Page = () => {
                         velit sit tellus parturient.
                       </p>
 
-                      <form className="flex justify-start mt-6 md:mt-8">
+                      <form
+                        className="flex justify-start mt-6 md:mt-8"
+                        onSubmit={handleOnSubmit}
+                      >
                         <div className="w-[33rem] flex flex-col md:flex-row items-start">
                           <div className="w-full">
                             <input
                               type="email"
                               placeholder="Email"
+                              required
                               maxLength={128}
                               className="w-full h-[3.25rem] px-[1.1375rem] leading-[3.25rem] font-inter rounded-[0.5rem] text-[rgba(0,0,0,0.659)] bg-[rgba(255,255,255,0.69)] text-[1em] outline-none focus:shadow-223-input"
                             />
@@ -292,6 +301,38 @@ const Template223Page = () => {
                             className="rounded-full text-white h-[2em] w-[2em] bg-[#ED5D3E] bg-223-arrow bg-position-0-0 bg-cover flex items-center justify-center transition duration-[0.25s]"
                           >
                             <FontAwesomeIcon icon={faArrowLeft} />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="done-section" className="">
+              <div className="flex items-end justify-start rounded-[2.5rem]">
+                <div className="w-full wrapper max-w-[72rem]">
+                  <div className="inner flex flex-col items-end py-6 px-6 md:flex-row min-[360px]:py-8 min-[360px]:px-8 md:px-16 md:py-16">
+                    <div className="w-full">
+                      <h1 className="tracking-[-0.04375rem] w-full leading-[1.25] text-white font-inter text-[2.5em] mb-[1.125rem] md:tracking-[-0.05rem] min-[360px]:mb-[1.3125rem] min-[480px]:mb-6">
+                        Thank you
+                      </h1>
+
+                      <p className="text-[1em] font-inter leading-[1.75] text-[rgba(255,255,255,0.659)] mt-[1.125rem] min-[360px]:mt-[1.3125rem] min-[480px]:mt-6">
+                        Posuere eget id ultrices pharetra lacus eu sodales
+                        sociis non lorem eu magna volutpat aliquam.
+                      </p>
+
+                      <ul className="flex justify-start text-[1.75em] mt-6 gap-[0.9375rem] min-[360px]:gap-5 md:mt-8">
+                        <li>
+                          <a
+                            href={`#home`}
+                            onClick={handleLinkClick}
+                            role="button"
+                            className="rounded-full text-white h-[2em] w-[2em] bg-[#ED5D3E] bg-223-arrow bg-position-0-0 bg-cover flex items-center justify-center transition duration-[0.25s]"
+                          >
+                            <FontAwesomeIcon icon={faArrowRight} />
                           </a>
                         </li>
                       </ul>
