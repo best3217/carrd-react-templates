@@ -125,6 +125,16 @@ module.exports = {
         "position-center-0-0": "center, 0% 0%",
         "position-center-0-50": "center, 0% 0%, 50% 50%",
       },
+      keyframes: {
+        "slideshow-background-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-25%)" },
+        },
+      },
+      animation: {
+        "slideshow-background-left":
+          "slideshow-background-left 60s linear infinite",
+      },
     },
   },
   plugins: [],

@@ -1,12 +1,15 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Template210 = () => {
   const [currentSection, setCurrentSection] = useState<any>(null);
   const location = useLocation();
   const navigate = useNavigate();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const slideRefs = useRef<HTMLDivElement[]>([]);
+  const images = ["bg-210-cover-1", "bg-210-cover-2", "bg-210-cover-3"];
 
   useEffect(() => {
     const sections: any = document.getElementsByTagName("section");
@@ -100,6 +103,47 @@ const Template210 = () => {
     showSection("#done");
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % images.length;
+      if (!slideRefs.current) return;
+
+      for (let i = 0; i < slideRefs.current.length; i++) {
+        if (i === nextIndex) {
+          slideRefs.current[i].classList.add(
+            "animate-slideshow-background-left"
+          );
+        }
+      }
+
+      setTimeout(() => {
+        for (let i = 0; i < slideRefs.current.length; i++) {
+          if (i === nextIndex) {
+            slideRefs.current[i].classList.add("opacity-100");
+            slideRefs.current[i].classList.remove("opacity-0");
+          } else {
+            slideRefs.current[i].classList.remove("opacity-100");
+            slideRefs.current[i].classList.add("opacity-0");
+          }
+        }
+      }, 1000);
+
+      setTimeout(() => {
+        for (let i = 0; i < slideRefs.current.length; i++) {
+          if (i === currentIndex) {
+            slideRefs.current[i].classList.remove(
+              "animate-slideshow-background-left"
+            );
+          }
+        }
+      }, 3000);
+
+      setCurrentIndex(nextIndex);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, images.length]);
+
   return (
     <div className="bg-[#141414] min-w-[320px] overflow-x-hidden tex-white min-h-screen leading-[1]">
       <div className="fixed left-0 right-0 z-0 w-screen h-screen bg-center bg-512 bg-210-main"></div>
@@ -112,9 +156,19 @@ const Template210 = () => {
                 <div className="z-[-1] absolute left-0 right-0 w-screen h-screen bg-center-0-0 bg-512-cover bg-210-inner"></div>
                 {/* Slide image */}
                 <div className="h-full object-cover bg-black absolute z-[-2] w-full left-0 overflow-hidden">
-                  <div className="h-full w-[150%] bg-center bg-no-repeat bg-cover bg-210-cover-1" />
-                  <div className="h-full w-[150%] bg-center bg-no-repeat bg-cover bg-210-cover-2" />
-                  <div className="h-full w-[150%] bg-center bg-no-repeat bg-cover bg-210-cover-3" />
+                  {images.map((image, index) => (
+                    <div
+                      ref={(el: HTMLDivElement) =>
+                        (slideRefs.current[index] = el)
+                      }
+                      key={index}
+                      className={`absolute h-full w-[150%] bg-center bg-no-repeat bg-cover transition-opacity ease-in-out duration-[2s] ${image} ${
+                        index === 0
+                          ? "animate-slideshow-background-left opacity-100"
+                          : "opacity-0"
+                      }`}
+                    />
+                  ))}
                 </div>
                 {/*  */}
 
